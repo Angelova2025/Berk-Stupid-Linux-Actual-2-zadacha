@@ -1,0 +1,91 @@
+vboxuser@ubuntu26:~$ cd Documents
+vboxuser@ubuntu26:~/Documents$ ls
+vboxuser@ubuntu26:~/Documents$ mkdir "Linox_Uroci"
+vboxuser@ubuntu26:~/Documents$ cd "Linox_Uroci"
+vboxuser@ubuntu26:~/Documents/Linox_Uroci$ mkdir Teoria Praktika
+vboxuser@ubuntu26:~/Documents/Linox_Uroci$ ls
+Praktika  Teoria
+vboxuser@ubuntu26:~/Documents/Linox_Uroci$ cd Teoria
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Teoria$ touch komandi.txt uprajnenia.txt
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Teoria$ ls
+komandi.txt  uprajnenia.txt
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Teoria$ cp uprajnenia.txt Praktika
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Teoria$ cd ..
+vboxuser@ubuntu26:~/Documents/Linox_Uroci$ cd Praktika
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Praktika$ ls
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Praktika$ cp uprajnenia.txt Teoria Praktika
+cp: target 'Praktika': No such file or directory
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Praktika$ cp uprajnenia.txt Teoria
+cp: cannot stat 'uprajnenia.txt': No such file or directory
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Praktika$ cd ..
+vboxuser@ubuntu26:~/Documents/Linox_Uroci$ cd Teoria
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Teoria$ cp uprajnenia.txt Teoria
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Teoria$ ls
+Praktika  Teoria  komandi.txt  uprajnenia.txt
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Teoria$ cp uprajnenia.txt Praktika
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Teoria$ cd ..
+vboxuser@ubuntu26:~/Documents/Linox_Uroci$ cd Praktika
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Praktika$ ls
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Praktika$ cp uprajnenia.txt uprajnenia.txt
+cp: cannot stat 'uprajnenia.txt': No such file or directory
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Praktika$ cd .. 
+vboxuser@ubuntu26:~/Documents/Linox_Uroci$ cd Teoria
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Teoria$ cp uprajnenia.txt uprajneniaCopy.txt
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Teoria$ mv uprajneniaCopy.txt Praktika
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Teoria$ mv uprajneniaCopy.txt Praktika/
+mv: cannot stat 'uprajneniaCopy.txt': No such file or directory
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Teoria$ mv uprajneniaCopy.txt Documents/Linox_Uroci/Praktika
+mv: cannot stat 'uprajneniaCopy.txt': No such file or directory
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Teoria$ mv uprajneniaCopy.txt Praktika/
+mv: cannot stat 'uprajneniaCopy.txt': No such file or directory
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Teoria$ mv uprajneniaCopy.txt Home/Documents/Linox_Uroci/Praktika
+mv: cannot stat 'uprajneniaCopy.txt': No such file or directory
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Teoria$ cp 'uprajneniaCopy.txt'~/Documents/Linox_Uroci/Praktika
+cp: missing destination file operand after 'uprajneniaCopy.txt~/Documents/Linox_Uroci/Praktika'
+Try 'cp --help' for more information.
+vboxuser@ubuntu26:~/Documents/Linox_Uroci/Teoria$ cd ..
+vboxuser@ubuntu26:~/Documents/Linox_Uroci$ cp 'uprajneniaCopy.txt' ~/Documents/Linox_Uroci/Praktika
+cp: cannot stat 'uprajneniaCopy.txt': No such file or directory
+vboxuser@ubuntu26:~/Documents/Linox_Uroci$ cd ..
+vboxuser@ubuntu26:~/Documents$ cd Praktika
+bash: cd: Praktika: No such file or directory
+vboxuser@ubuntu26:~/Documents$ ls
+Linox_Uroci
+vboxuser@ubuntu26:~/Documents$ cp uprajneniaCopy.txt /Documents/Linox_Uroci/Praktika
+cp: cannot stat 'uprajneniaCopy.txt': No such file or directory
+vboxuser@ubuntu26:~/Documents$ ls
+Linox_Uroci
+vboxuser@ubuntu26:~/Documents$ touch otgovori.txt
+vboxuser@ubuntu26:~/Documents$ cd ..
+vboxuser@ubuntu26:~$ ls -R
+.:
+Desktop    Downloads    Music     Public     Videos
+Documents  Linox_Uroci  Pictures  Templates
+
+./Desktop:
+
+./Documents:
+Linox_Uroci  otgovori.txt
+
+./Documents/Linox_Uroci:
+Praktika  Teoria
+
+./Documents/Linox_Uroci/Praktika:
+
+./Documents/Linox_Uroci/Teoria:
+Praktika  Teoria  komandi.txt  uprajnenia.txt
+
+./Downloads:
+
+./Linox_Uroci:
+
+./Music:
+
+./Pictures:
+
+./Public:
+
+./Templates:
+
+./Videos:
+
